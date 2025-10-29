@@ -1,0 +1,33 @@
+{\rtf1\ansi \deff1{\fonttbl{\f1\fmodern\fprq1\fcharset0 Consolas;}}{\colortbl;\red238\green238\blue238;\red00\green00\blue00;\red166\green133\blue00;\red128\green00\blue128;\red242\green121\blue00;\red255\green128\blue00;\red255\green00\blue255;\red00\green128\blue192;\red00\green00\blue255;\red48\green48\blue48;\red255\green00\blue128;\red158\green93\blue255;\red255\green00\blue00;\red255\green00\blue00;\red187\green121\blue119;\red128\green128\blue192;\red00\green68\blue102;\red13\green195\blue117;\red13\green182\blue195;}
+\paperw11905\paperh16837\margl1134\margr1134\margt1134\margb1134\sectd\plain\f1\fs20
+\pard \cbpat1{{\cf2{}}{\cf8{\b #include <iostream>\b0 }}}\par\pard
+\cbpat1{{\cf2{}}{\cf8{\b #include <string>\b0 }}}\par\pard
+\cbpat1{{\cf2{}}{\cf8{\b #include <cctype>\b0 }}}\par\pard
+\cbpat1{{\cf2{}}}\par\pard
+\cbpat1{{\cf2{}}{\cf15{\b using namespace\b0 }} {\cf2{std}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{}}}\par\pard
+\cbpat1{{\cf2{}}{\cf16{\b int\b0 }} {\cf2{}}{\cf17{countVowels}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{}}{\cf16{\b const char\b0 }}{\cf2{}}{\cf11{\b *\b0 }} {\cf2{p}}{\cf11{\b ) \{\b0 }}}\par\pard
+\cbpat1{{\cf2{}}    {\cf16{\b int\b0 }} {\cf2{count}} {\cf11{\b =\b0 }} {\cf2{}}{\cf4{\b {0}\b0 }}{\cf2{}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{}}    {\cf15{\b while\b0 }} {\cf2{}}{\cf11{\b (*\b0 }}{\cf2{p}} {\cf11{\b !=\b0 }} {\cf2{}}{\cf3{'\\{0}'}}{\cf2{}}{\cf11{\b ) \{\b0 }}}\par\pard
+\cbpat1{{\cf2{}}        {\cf16{\b char\b0 }} {\cf2{ch}} {\cf11{\b =\b0 }} {\cf2{}}{\cf17{tolower}}{\cf2{}}{\cf11{\b (*\b0 }}{\cf2{p}}{\cf11{\b );\b0 }} {\cf2{}}{\cf5{// ×ª»»ÎªÐ¡Ð´Í³\'d2»ÅÐ¶Ï}}}\par\pard
+\cbpat1{{\cf2{}}        {\cf15{\b if\b0 }} {\cf2{}}{\cf11{\b (\b0 }}{\cf2{ch}} {\cf11{\b ==\b0 }} {\cf2{}}{\cf3{'a'}}{\cf2{}} {\cf11{\b ||\b0 }} {\cf2{ch}} {\cf11{\b ==\b0 }} {\cf2{}}{\cf3{'e'}}{\cf2{}} {\cf11{\b ||\b0 }} {\cf2{ch}} {\cf11{\b ==\b0 }} {\cf2{}}{\cf3{'i'}}{\cf2{}} {\cf11{\b ||\b0 }} {\cf2{ch}} {\cf11{\b ==\b0 }} {\cf2{}}{\cf3{'o'}}{\cf2{}} {\cf11{\b ||\b0 }} {\cf2{ch}} {\cf11{\b ==\b0 }} {\cf2{}}{\cf3{'u'}}{\cf2{}}{\cf11{\b ) \{\b0 }}}\par\pard
+\cbpat1{{\cf2{            count}}{\cf11{\b ++;\b0 }}}\par\pard
+\cbpat1{{\cf2{}}        {\cf11{\b \}\b0 }}}\par\pard
+\cbpat1{{\cf2{        p}}{\cf11{\b ++;\b0 }} {\cf2{}}{\cf5{// \'d2Æ¶¯\'d6¸Õë}}}\par\pard
+\cbpat1{{\cf2{}}    {\cf11{\b \}\b0 }}}\par\pard
+\cbpat1{{\cf2{}}    {\cf15{\b return\b0 }} {\cf2{count}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{}}{\cf11{\b \}\b0 }}}\par\pard
+\cbpat1{{\cf2{}}}\par\pard
+\cbpat1{{\cf2{}}{\cf16{\b int\b0 }} {\cf2{}}{\cf17{main}}{\cf2{}}{\cf11{\b () \{\b0 }}}\par\pard
+\cbpat1{{\cf2{    cout}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{"Í³¼ÆÔª\'d2ô×\'d6\'c4¸"}}{\cf2{}} {\cf11{\b <<\b0 }} {\cf2{endl}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{}}    }\par\pard
+\cbpat1{{\cf2{    string input}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{    cout}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{"ÇëÊ\'e4\'c8ë\'d2»ÐÐ×\'d6·û´®: "}}{\cf2{}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{}}    {\cf17{getline}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{cin}}{\cf11{\b ,\b0 }} {\cf2{input}}{\cf11{\b );\b0 }}}\par\pard
+\cbpat1{{\cf2{}}    }\par\pard
+\cbpat1{{\cf2{}}    {\cf16{\b int\b0 }} {\cf2{vowelCount}} {\cf11{\b =\b0 }} {\cf2{}}{\cf17{countVowels}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{input}}{\cf11{\b .\b0 }}{\cf2{}}{\cf17{c_str}}{\cf2{}}{\cf11{\b ());\b0 }}}\par\pard
+\cbpat1{{\cf2{    cout}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{"Ôª\'d2ô×\'d6\'c4¸¸\'f6Êý: "}}{\cf2{}} {\cf11{\b <<\b0 }} {\cf2{vowelCount}} {\cf11{\b <<\b0 }} {\cf2{endl}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{}}}\par\pard
+\cbpat1{{\cf2{}}    {\cf15{\b return\b0 }} {\cf2{}}{\cf4{\b {0}\b0 }}{\cf2{}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{}}{\cf11{\b \}\b0 }}{\cf2{}}}\par\pard
+\cbpat1{}}
